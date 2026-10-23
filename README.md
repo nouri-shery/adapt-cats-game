@@ -1,47 +1,32 @@
 # Cat Sanctuary
 
-A little game about cats.
+A little pixel game about cats.
 
-I made this game because I wanted to try making something cute with pixel art. You can adopt cats, feed them, play with them, buy stuff for them, and decorate your sanctuary.
+I drew the cat designs myself and used AI to help turn my drawings into JavaScript code. Then I worked on putting the game together and adding the interactions.
 
-## Screenshots
+You can adopt cats, feed them, play with them, collect coins, buy accessories, and decorate your sanctuary.
 
-Add a couple of screenshots here.
+## How I made it
 
-![Game screenshot](<img width="960" height="540" alt="day" src="https://github.com/user-attachments/assets/ec04a1d4-4952-4f29-8105-ffb5463ab7aa" />
-)
+I used HTML, CSS, and JavaScript to build the game.
 
-## How to play
+- **HTML** for the page structure.
+- **CSS** for the layout and styling.
+- **JavaScript** for the game logic and interactions.
+- **Canvas** for drawing the cats.
 
-Open `index.html` in your browser and you're ready to go.
-
-Click on the cats to interact with them. You can feed them, play with them, adopt more cats, and use your coins to buy things for your sanctuary.
-
-There are also goals to complete and different cats to collect.
-
-## Made with
-
-- HTML
-- CSS
-- JavaScript
-- Canvas for drawing the pixel cats
-
-No game engine or framework. Just the browser and these files.
-
-## A bit about the code
-
-The cats are drawn with pixel patterns in JavaScript instead of using an image for every cat. I used different colors and shared drawing logic to make the cats look different.
-
-JavaScript handles the cats' needs, coins, shop, accessories, and other interactions. CSS is used for the layout and the look of the game.
+I drew the cat designs myself, then used AI to help convert those drawings into JavaScript pixel-art code. I used that code as part of the game and worked on connecting it to the other features.
 
 ## What I learned
 
-I got more practice with JavaScript, especially keeping track of different cats and their needs. I also learned more about drawing things with Canvas and saving game progress in Local Storage.
+I learned more about JavaScript, especially how game features work together and how to keep track of things like cats, coins, and their needs.
 
-Getting all the different interactions to work together took some testing, especially when several features used the same game data.
+I also got to see how my drawings could become something interactive instead of just staying as pictures.
 
-## Run it locally
+One thing I had to work on was getting the different parts of the game to work together without breaking other features.
 
-Download the repository and open `index.html`. No installation needed.
+## How to run it
+
+Download the project and open `index.html` in your browser. No installation needed.
 
 Made by Nouran Ehab for Hack Club Snowglobe.
