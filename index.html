@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#edf5ef">
+<meta name="description" content="Cat Sanctuary: adopt pixel cats, feed them, play with them and watch them live.">
+<title>Cat Sanctuary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+  <header class="top">
+    <span class="logo">✿ tiny cat club</span>
+    <span class="hud">
+      <span class="chip" id="coins">¢ 0</span>
+      <span class="chip" id="clock">DAY 1</span>
+      <span class="chip" id="found">0/16</span>
+      <button class="chip btn" id="mute" type="button" aria-label="Toggle sound">♪ ON</button>
+    </span>
+  </header>
+
+  <section class="stage">
+    <canvas id="game" aria-label="Your cat sanctuary. Click a cat to pet it."></canvas>
+    <aside id="panel" hidden>
+      <button id="pname" type="button" title="Click to rename">-</button>
+      <p id="pinfo"></p>
+      <button id="pdress" type="button" class="mini">✿ STYLE</button>
+      <label>FOOD<span class="meter"><i id="mH"></i></span></label>
+      <label>JOY<span class="meter"><i id="mJ"></i></span></label>
+      <label>ENERGY<span class="meter"><i id="mE"></i></span></label>
+    </aside>
+    <div id="toast" role="status"></div>
+    <div id="sheet" hidden><div class="card"><h2 id="sheetTitle"></h2><div id="sheetBody"></div><button id="sheetClose" class="mini" type="button">CLOSE</button></div></div>
+
+    <div id="modal" hidden>
+      <div class="box">
+        <div id="pickView">
+          <p class="kick">✦ THE CAT-O-METER ✦</p>
+          <h1>WHICH CAT<br>ARE YOU?</h1>
+          <p id="pickSub">Choose wisely. Or don't. They're cats.</p>
+          <div id="picks"></div>
+          <button id="closeModal" class="ghost" type="button">LATER</button>
+        </div>
+        <div id="revealView" hidden>
+          <p id="rKick" class="kick"></p>
+          <canvas id="rCat" width="28" height="28"></canvas>
+          <p id="rWord"></p>
+          <p id="rCap"></p>
+          <p id="rTrait"></p>
+          <button id="rOk" class="ghost" type="button">WELCOME HOME ↵</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="bar">
+    <button id="feed" type="button">FEED <small>-3¢ · F</small></button>
+    <button id="yarn" type="button">YARN <small>Y</small></button>
+    <button id="shop" type="button">SHOP <small>S</small></button>
+    <button id="goals" type="button">GOALS <small>G</small></button>
+    <button id="adopt" type="button">ADOPT <small id="adoptCost">A</small></button>
+  </nav>
+  <footer class="foot">click a cat to pet it · decorate · dress them up · 100% cats</footer>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
